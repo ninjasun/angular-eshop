@@ -1,0 +1,35 @@
+<p>
+    Search: <input data-ng-model="search">
+</p>
+<table class="table table-bordered">
+    <tr class="well">
+        <td class="tdRight" colspan="4">
+            <b>{{getTotalCount()}}</b> items, <b>{{getTotalPrice() |  currency}}</b></a>
+            <i class="icon-shopping-cart" />
+        </td>
+    </tr>
+
+    <tr data-ng-repeat="product in products | orderBy:'name' | filter:search">
+        <td class="tdCenter"><img data-ng-src="img/products/{{product.id}}.jpg" alt="{{product.name}}"/></td>
+        <td>
+            <b>{{product.name}}</b><br/>
+            {{product.description}}
+        </td>
+        <td class="tdRight">
+            {{product.price | currency}}
+        </td>
+        <td class="tdCenter">
+            <button type="button" class="btn btn-primary btn-sm" data-ng-click="addItem(product)">add to cart
+           </button>
+        </td>
+    </tr>
+    <tr class="well">
+    <tr class="well">
+        <td class="tdRight" colspan="4">
+            <b>{{getTotalCount()}}</b> items, <b>{{getTotalPrice() |  currency}}</b>
+            <i class="icon-shopping-cart" />
+        </td>
+    </tr>
+    </tr>
+</table>
+</div>

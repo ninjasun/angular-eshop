@@ -1,0 +1,15 @@
+{
+  "name": "shopCart",
+  "version": "0.0.0",
+  "authors": [
+    "ninjasun <davide.mezzetti@hotmail.it>"
+  ],
+  "main": "/app/app.js",
+  "license": "MIT",
+  "dependencies": {
+    "angular-mocks":"latest",
+    "angular-route": "~1.2.23",
+     "angular":"~1.2.24",
+     "jasmine":"~2.0.2"
+  }
+}
